@@ -26,7 +26,7 @@
   --sky-light:#C8DDE8;
   --border:#C8BCA8;
   --border-light:#DDD5C5;
-  --muted:#8A7A60;
+  --muted:#5A4A30;
   --hand:'Caveat',cursive;
   --serif:'Fraunces',Georgia,serif;
   --body:'DM Sans',system-ui,sans-serif;
@@ -65,14 +65,14 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
 .snum-lt{position:absolute;bottom:12px;right:16px;font-family:var(--hand);font-size:14px;color:rgba(255,255,255,0.18)}
 
 /* SHARED */
-.eyebrow{font-family:var(--hand);font-size:17px;color:var(--rust);margin-bottom:6px}
+.eyebrow{font-family:var(--hand);font-size:17px;color:#9A3A0E;margin-bottom:6px;font-weight:700}
 .tag{display:inline-block;background:var(--rust-light);color:var(--rust);font-family:var(--hand);font-size:15px;padding:2px 12px;border-radius:3px;margin-bottom:14px}
 .tag.sage{background:var(--sage-light);color:var(--sage)}
 .tag.gold{background:var(--gold-light);color:var(--gold)}
 .tag.sky{background:var(--sky-light);color:var(--sky)}
 
 /* BULLET LIST */
-.blist{list-style:none;display:flex;flex-direction:column;gap:11px;flex:1}
+.blist{list-style:none;display:flex;flex-direction:column;gap:9px;flex:1}
 .blist li{display:flex;align-items:flex-start;gap:10px;font-size:17px;line-height:1.45;color:var(--ink);font-weight:300}
 .blist li .arr{font-family:var(--hand);font-size:19px;color:var(--rust);flex-shrink:0;line-height:1.25}
 .blist li strong{font-weight:500}
@@ -88,13 +88,13 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
 /* STAT CARDS */
 .statrow{display:flex;gap:10px;flex:1;min-height:0}
 .sc{flex:1;border-radius:4px;padding:13px 13px 11px;display:flex;flex-direction:column;border:1.5px solid var(--border);background:var(--paper);overflow:hidden;min-height:0}
-.sc .sl{font-family:var(--hand);font-size:15px;color:var(--muted);margin-bottom:4px;flex-shrink:0}
+.sc .sl{font-family:var(--hand);font-size:17px;color:var(--muted);margin-bottom:4px;flex-shrink:0}
 .sc .sn{font-family:var(--serif);font-style:italic;font-size:32px;color:var(--ink);line-height:1;flex:1;display:flex;align-items:center}
-.sc .ss{font-size:12px;color:var(--muted);line-height:1.3;flex-shrink:0;margin-top:4px}
+.sc .ss{font-size:14px;color:var(--muted);line-height:1.3;flex-shrink:0;margin-top:4px}
 .sc.dark{background:var(--ink);border-color:var(--ink)}
-.sc.dark .sl{color:#6A5A48}
+.sc.dark .sl{color:#A89878}
 .sc.dark .sn{color:var(--rust-light)}
-.sc.dark .ss{color:#5A4A38}
+.sc.dark .ss{color:#8A7A60}
 .sc.rust{background:var(--rust-pale);border-color:var(--rust-light)}
 .sc.rust .sl{color:var(--rust)}
 .sc.rust .sn{color:var(--rust)}
@@ -110,7 +110,7 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
 .fbox{background:var(--paper);border:1.5px solid var(--border);border-radius:4px;padding:18px 20px;display:flex;flex-direction:column;justify-content:center;border-left:4px solid var(--rust)}
 .fbox .fl{font-family:var(--hand);font-size:16px;color:var(--rust);margin-bottom:8px}
 .fbox .ft{font-family:var(--serif);font-style:italic;font-size:21px;color:var(--ink);line-height:1.35}
-.fbox .fe{margin-top:10px;font-size:13px;color:var(--muted);font-weight:300;line-height:1.5}
+.fbox .fe{margin-top:10px;font-size:15px;color:var(--muted);font-weight:300;line-height:1.5}
 .fbox .fe span{color:var(--rust);font-weight:500}
 .fbox.sage{border-left-color:var(--sage)}
 .fbox.sage .fl{color:var(--sage)}
@@ -118,11 +118,11 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
 .fbox.gold .fl{color:var(--gold)}
 
 /* TABLE — bumped for readability from back of room */
-.dtable{width:100%;border-collapse:collapse;font-size:15px}
-.dtable th{text-align:left;padding:9px 12px;font-family:var(--hand);font-size:15px;color:var(--muted);border-bottom:2px solid var(--border)}
-.dtable td{padding:10px 12px;border-bottom:1px solid var(--paper-dark);color:var(--ink);font-weight:300;font-size:15px}
-.dtable .amt{text-align:right;font-weight:500;font-family:var(--serif);font-size:16px}
-.dtable tfoot td{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--rust);border-top:2px solid var(--border);padding-top:11px;font-weight:600}
+.dtable{width:100%;border-collapse:collapse;font-size:17px}
+.dtable th{text-align:left;padding:7px 12px;font-family:var(--hand);font-size:17px;color:var(--muted);border-bottom:2px solid var(--border)}
+.dtable td{padding:8px 12px;border-bottom:1px solid var(--paper-dark);color:var(--ink);font-weight:300;font-size:17px}
+.dtable .amt{text-align:right;font-weight:500;font-family:var(--serif);font-size:18px}
+.dtable tfoot td{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--rust);border-top:2px solid var(--border);padding-top:9px;font-weight:600}
 .dtable tr.hl td{background:var(--rust-pale);font-weight:400}
 .dtable tr.hl .amt{color:var(--rust);font-weight:600}
 
@@ -138,30 +138,30 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
 .ibar .ibl{font-family:var(--hand);font-size:18px;color:var(--ink);min-width:140px}
 .ibar .itrack{flex:1;height:10px;background:var(--paper-dark);border-radius:99px;overflow:hidden}
 .ibar .ifill{height:100%;border-radius:99px}
-.ibar .iamt{font-family:var(--serif);font-style:italic;font-size:15px;font-weight:500;min-width:46px;text-align:right;color:var(--ink)}
+.ibar .iamt{font-family:var(--serif);font-style:italic;font-size:17px;font-weight:500;min-width:46px;text-align:right;color:var(--ink)}
 .ibar.total .ibl{font-weight:700}
-.ibar.total .iamt{color:var(--rust);font-size:16px;font-weight:700}
+.ibar.total .iamt{color:var(--rust);font-size:18px;font-weight:700}
 
 /* CHECKLIST — bumped for readability */
-.cklist{list-style:none;display:flex;flex-direction:column;gap:10px;flex:1}
+.cklist{list-style:none;display:flex;flex-direction:column;gap:8px;flex:1}
 .cklist li{display:flex;align-items:flex-start;gap:10px;font-size:16px;color:var(--ink);font-weight:300;line-height:1.45}
 .ck{font-family:var(--hand);font-size:18px;color:var(--sage);flex-shrink:0;margin-top:0px}
 .ckn{width:24px;height:24px;border-radius:50%;background:var(--rust);color:#fff;font-family:var(--hand);font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
 
 /* QUOTE SLIDE — lighter background, better contrast */
-.s-quote{background:#2C2418;justify-content:center;align-items:center;padding:52px 80px;text-align:center}
+.s-quote{background:#161008;justify-content:center;align-items:center;padding:52px 80px;text-align:center}
 .s-quote .bigq{font-family:var(--serif);font-size:90px;line-height:0.5;color:var(--rust);margin-bottom:18px;opacity:0.7}
-.s-quote blockquote{font-family:var(--serif);font-style:italic;font-size:29px;line-height:1.45;color:#F5EDE0;max-width:720px;font-weight:300}
+.s-quote blockquote{font-family:var(--serif);font-style:italic;font-size:29px;line-height:1.45;color:#FFFFFF;max-width:720px;font-weight:300}
 .s-quote blockquote em{color:#F2A070;font-style:normal;font-family:var(--hand);font-size:32px}
-.s-quote cite{display:block;margin-top:18px;font-family:var(--hand);font-size:17px;color:#7A6A50;font-style:normal}
+.s-quote cite{display:block;margin-top:18px;font-family:var(--hand);font-size:17px;color:#C8B898;font-style:normal}
 
 /* DARK SECTION BREAK — warmer dark, better contrast */
-.s-dark{flex-direction:row;background:#2C2418}
+.s-dark{flex-direction:row;background:#1C1208}
 .s-dark .band{flex:1;padding:0 56px;display:flex;align-items:center;justify-content:space-between}
 .s-dark .si{display:flex;flex-direction:column;justify-content:center}
 .s-dark .stag{font-family:var(--hand);font-size:17px;margin-bottom:10px;letter-spacing:0.02em}
-.s-dark h2{font-family:var(--serif);font-style:italic;font-size:42px;line-height:1.1;max-width:580px;font-weight:300;color:#F5EDE0}
-.s-dark .sdesc{font-family:var(--hand);font-size:19px;margin-top:14px;max-width:520px;line-height:1.45}
+.s-dark h2{font-family:var(--serif);font-style:italic;font-size:42px;line-height:1.1;max-width:580px;font-weight:300;color:#FFFFFF}
+.s-dark .sdesc{font-family:var(--hand);font-size:19px;margin-top:14px;max-width:520px;line-height:1.45;color:#FFFFFF}
 .s-dark .bnum{font-family:var(--serif);font-size:110px;line-height:1;opacity:0.07;color:#fff}
 
 /* PAPER SECTION BREAK */
@@ -174,12 +174,12 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
 .s-close .left h2 strong{font-style:normal;font-weight:600}
 .s-close .left .sign{font-family:var(--hand);font-size:19px;color:rgba(255,255,255,0.75);line-height:1.6}
 .s-close .right{width:300px;background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:36px 26px;gap:12px;border-left:2px dashed var(--border)}
-.s-close .to{background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:11px 13px;font-size:13px;color:var(--ink);font-weight:300;line-height:1.5}
-.s-close .to strong{display:block;font-family:var(--hand);font-size:15px;color:var(--rust);font-weight:500;margin-bottom:3px}
+.s-close .to{background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:11px 13px;font-size:15px;color:var(--ink);font-weight:300;line-height:1.5}
+.s-close .to strong{display:block;font-family:var(--hand);font-size:17px;color:var(--rust);font-weight:500;margin-bottom:3px}
 
 /* CONTENT SLIDE */
-.s-content{padding:34px 48px 26px}
-.slide-header{margin-bottom:14px}
+.s-content{padding:28px 48px 20px}
+.slide-header{margin-bottom:10px}
 .slide-header h2{font-family:var(--serif);font-size:29px;line-height:1.12;color:var(--ink);font-weight:600}
 .slide-body{flex:1;display:flex;gap:26px;min-height:0;overflow:hidden}
 
@@ -194,7 +194,7 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
   <div class="controls">
     <button class="btn" onclick="toggleNotes()">notes</button>
     <button class="btn" onclick="prevSlide()">← back</button>
-    <span id="counter">1 / 22</span>
+    <span id="counter">1 / 23</span>
     <button class="btn go" onclick="nextSlide()">next →</button>
   </div>
 </div>
@@ -204,16 +204,16 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
 <!-- ═══ 01 TITLE ═══ -->
 <div class="slide active" style="background:var(--paper);flex-direction:row" data-notes="Start warm and a little disarming. Don't open with credentials — open with the question everyone in the room is already sitting with. Let the right panel do the work of setting expectations honestly.">
   <div style="flex:1;padding:48px 52px;display:flex;flex-direction:column;justify-content:center;border-right:2px dashed var(--border)">
-    <div style="font-family:var(--hand);font-size:16px;color:var(--rust);margin-bottom:16px">✦ Glass Art Society · Annual Conference 2026</div>
+    <div style="font-family:var(--hand);font-size:18px;color:var(--rust);margin-bottom:16px">✦ Glass Art Society · Annual Conference 2026</div>
     <h1 style="font-family:var(--serif);font-size:48px;line-height:1.06;color:var(--ink);margin-bottom:16px;font-weight:600">The Business of<br><em style="color:var(--rust);font-weight:300">Being an Artist</em></h1>
     <p style="font-family:var(--hand);font-size:20px;color:var(--muted);line-height:1.5">Making it work without selling out.<br>Or losing your mind. Or your soul.</p>
   </div>
   <div style="width:290px;background:var(--ink);display:flex;flex-direction:column;justify-content:center;padding:36px 28px;gap:20px">
-    <p style="font-family:var(--hand);font-size:17px;color:#8A7A60;line-height:1.6">This session is for anyone who has ever thought:<br><span style="color:var(--rust-light)">"I love making things.<br>I hate that I can't afford to."</span></p>
+    <p style="font-family:var(--hand);font-size:17px;color:#C8B898;line-height:1.6">This session is for anyone who has ever thought:<br><span style="color:#FFB080">"I love making things.<br>I hate that I can't afford to."</span></p>
     <div style="height:1px;background:#2C2010"></div>
-    <p style="font-family:var(--hand);font-size:14px;color:#5A4A38;line-height:1.6">We'll do real math together.<br>Name the things nobody says out loud.<br>And leave with something you can actually use.</p>
+    <p style="font-family:var(--hand);font-size:18px;color:#5A4A38;line-height:1.6">We'll do real math together.<br>Name the things nobody says out loud.<br>And leave with something you can actually use.</p>
   </div>
-  <span class="snum-lt">01 / 22</span>
+  <span class="snum-lt">01 / 23</span>
 </div>
 
 <!-- ═══ 02 WHO I AM ═══ -->
@@ -232,29 +232,29 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
       </ul>
     </div>
     <div style="flex:0.55;display:flex;flex-direction:column;gap:12px;justify-content:center">
-      <div class="sticky">"Someone who's actually working through this — not selling me a system."<br><span style="font-size:14px;color:var(--muted)">— that's the goal</span></div>
-      <div class="sticky rust" style="font-size:15px">"I'm not there 100% yet."<br><strong>That's the most honest thing a presenter can say.</strong></div>
+      <div class="sticky">"Someone who's actually working through this — not selling me a system."<br><span style="font-size:18px;color:var(--muted)">— that's the goal</span></div>
+      <div class="sticky rust" style="font-size:17px">"I'm not there 100% yet."<br><strong>That's the most honest thing a presenter can say.</strong></div>
     </div>
   </div>
-  <span class="snum">02 / 22</span>
+  <span class="snum">02 / 23</span>
 </div>
 
 <!-- ═══ 03 THE REAL QUESTION ═══ -->
 <div class="slide s-dark" data-notes="Let these land one at a time. Read them slowly. Look around the room. These are the questions people came in carrying. Naming them out loud is itself valuable — it says 'you're not weird for thinking this, everyone thinks this.'">
   <div class="band">
     <div class="si">
-      <div class="stag" style="color:var(--rust-light)">the question everyone's sitting with</div>
+      <div class="stag" style="color:#FFB080;font-size:18px">the question everyone's sitting with</div>
       <h2 style="color:var(--warm-white)">How do I do this<br>without going broke?</h2>
-      <div style="margin-top:24px;display:flex;flex-direction:column;gap:10px">
-        <div style="font-family:var(--hand);font-size:18px;color:#6A5A48">"Am I charging too little? Probably. But what do I charge?"</div>
-        <div style="font-family:var(--hand);font-size:18px;color:#6A5A48">"Do I need an LLC? A business account? Should I be on TikTok?"</div>
-        <div style="font-family:var(--hand);font-size:18px;color:#6A5A48">"Is it okay that I still have another job? Am I doing this wrong?"</div>
-        <div style="font-family:var(--hand);font-size:20px;color:var(--rust-light);margin-top:8px">All valid. All answerable. Let's go.</div>
+      <div style="margin-top:20px;display:flex;flex-direction:column;gap:14px">
+        <div style="font-family:var(--hand);font-size:22px;color:#FFFFFF">"Am I charging too little? Probably. But what do I charge?"</div>
+        <div style="font-family:var(--hand);font-size:22px;color:#FFFFFF">"Do I need an LLC? A business account? Should I be on TikTok?"</div>
+        <div style="font-family:var(--hand);font-size:22px;color:#FFFFFF">"Is it okay that I still have another job? Am I doing this wrong?"</div>
+        <div style="font-family:var(--hand);font-size:24px;color:#FFD080;font-weight:700;margin-top:12px">All valid. All answerable. Let's go.</div>
       </div>
     </div>
     <div class="bnum">?</div>
   </div>
-  <span class="snum-lt">03 / 22</span>
+  <span class="snum-lt">03 / 23</span>
 </div>
 
 <!-- ═══ 04 DO THE MATH FIRST ═══ -->
@@ -274,55 +274,115 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
     <div style="flex:0.45;display:flex;flex-direction:column;align-items:center;gap:14px">
       <div style="width:88px;height:88px;border-radius:50%;background:var(--rust);display:flex;align-items:center;justify-content:center;flex-direction:column">
         <span style="font-family:var(--hand);font-size:32px;color:#fff;line-height:1">8</span>
-        <span style="font-family:var(--hand);font-size:13px;color:rgba(255,255,255,0.7)">minutes</span>
+        <span style="font-family:var(--hand);font-size:18px;color:rgba(255,255,255,0.7)">minutes</span>
       </div>
-      <div class="sticky" style="text-align:center;font-size:15px;transform:rotate(-1deg)">Your number will<br>probably surprise you.</div>
+      <div class="sticky" style="text-align:center;font-size:17px;transform:rotate(-1deg)">Your number will<br>probably surprise you.</div>
     </div>
   </div>
-  <span class="snum">04 / 22</span>
+  <span class="snum">04 / 23</span>
 </div>
 
 <!-- ═══ 05 WHAT THE NUMBER LOOKS LIKE ═══ -->
-<div class="slide s-content" style="padding:28px 40px 20px" data-notes="Three things to call out as you walk these rows. One: 'In a shared household, this is YOUR SHARE — not the full household number. That changes things for a lot of people.' Two: 'If you have kids or dependents, add childcare — it can be $1,500 to $3,000 a month. This table just went up significantly for you.' Three: 'None of these rows include studio costs or materials — that comes next. This is just existing.' The mid-country row is where most of the room lives. The scraping-by row is not a moral failure — name that explicitly.">
+<div class="slide s-content" style="padding:18px 32px 14px" data-notes="Three things to call out as you walk these rows. One: 'In a shared household, this is YOUR SHARE — not the full household number. That changes things for a lot of people.' Two: 'If you have kids or dependents, add childcare — it can be $1,500 to $3,000 a month. This table just went up significantly for you.' Three: 'None of these rows include studio costs or materials — that comes next. This is just existing.' The mid-country row is where most of the room lives. The scraping-by row is not a moral failure — name that explicitly.">
   <div class="slide-header" style="margin-bottom:6px">
     <div class="eyebrow">what the numbers actually look like</div>
-    <h2 style="font-size:24px">Your share of monthly costs — before you sell a single piece.</h2>
+    <h2 style="font-size:22px">Your share of monthly costs — before you sell a single piece.</h2>
   </div>
   <div class="slide-body" style="flex-direction:column;gap:5px">
-    <div style="display:flex;gap:7px;padding:0 2px;margin-bottom:1px">
-      <div style="width:100px;flex-shrink:0"></div>
-      <div style="flex:1;font-family:var(--hand);font-size:11px;color:var(--muted);text-align:center">Housing (your share)</div>
-      <div style="flex:1;font-family:var(--hand);font-size:11px;color:var(--muted);text-align:center">Food + Health &amp; Dental</div>
-      <div style="flex:1;font-family:var(--hand);font-size:11px;color:var(--muted);text-align:center">Bills + Loans + Phone</div>
-      <div style="flex:1;font-family:var(--hand);font-size:11px;color:var(--muted);text-align:center">Monthly total</div>
+
+    <!-- COLUMN HEADERS -->
+    <div style="display:flex;gap:6px;padding:0 2px;margin-bottom:2px">
+      <div style="width:88px;flex-shrink:0"></div>
+      <div style="flex:1;font-family:var(--hand);font-size:14px;color:var(--muted);text-align:center">Housing (your share)</div>
+      <div style="flex:1;font-family:var(--hand);font-size:14px;color:var(--muted);text-align:center">Food + Health &amp; Dental</div>
+      <div style="flex:1;font-family:var(--hand);font-size:14px;color:var(--muted);text-align:center">Bills + Loans + Phone</div>
+      <div style="flex:1;font-family:var(--hand);font-size:14px;color:var(--muted);text-align:center">Monthly total</div>
     </div>
+
     <!-- ROW 1 — High cost -->
-    <div style="display:flex;gap:7px;align-items:stretch;flex:1">
-      <div style="width:100px;flex-shrink:0;display:flex;align-items:center"><div style="font-family:var(--hand);font-size:12px;color:var(--sky);line-height:1.4">SF / NYC /<br>LA / Seattle</div></div>
-      <div class="sc" style="flex:1;background:#EDF4FA;border-color:#B0CCE0;padding:10px 10px 8px"><div class="sl" style="color:var(--sky)">1BR alone</div><div class="sn" style="font-size:22px;color:var(--sky)">$2,800</div><div class="ss">$2,500–3,500 range</div></div>
-      <div class="sc" style="flex:1;background:#EDF4FA;border-color:#B0CCE0;padding:10px 10px 8px"><div class="sl" style="color:var(--sky)">groceries + unsubsidized ins.</div><div class="sn" style="font-size:22px;color:var(--sky)">$1,050</div><div class="ss">insurance + dental often uncovered</div></div>
-      <div class="sc" style="flex:1;background:#EDF4FA;border-color:#B0CCE0;padding:10px 10px 8px"><div class="sl" style="color:var(--sky)">utilities, transport, phone, loans</div><div class="sn" style="font-size:22px;color:var(--sky)">$1,050</div><div class="ss">incl. ~$350 avg student loan</div></div>
-      <div class="sc dark" style="flex:1;padding:10px 10px 8px"><div class="sl">monthly floor</div><div class="sn" style="font-size:22px">$4,900</div><div class="ss">= $59K/yr just to exist</div></div>
+    <div style="display:flex;gap:6px;align-items:stretch;flex:1">
+      <div style="width:88px;flex-shrink:0;display:flex;align-items:center">
+        <div style="font-family:var(--hand);font-size:14px;color:var(--sky);line-height:1.35">SF / NYC /<br>LA / Seattle</div>
+      </div>
+      <div class="sc" style="flex:1;background:#EDF4FA;border-color:#B0CCE0;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:var(--sky);margin-bottom:2px">1BR alone</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--sky);line-height:1">$2,800</div>
+        <div style="font-size:12px;color:#7A9AB8;margin-top:3px">$2,500–3,500 range</div>
+      </div>
+      <div class="sc" style="flex:1;background:#EDF4FA;border-color:#B0CCE0;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:var(--sky);margin-bottom:2px">groceries + unsubsidized ins.</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--sky);line-height:1">$1,050</div>
+        <div style="font-size:12px;color:#7A9AB8;margin-top:3px">dental often not covered</div>
+      </div>
+      <div class="sc" style="flex:1;background:#EDF4FA;border-color:#B0CCE0;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:var(--sky);margin-bottom:2px">utilities, transport, loans</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--sky);line-height:1">$1,050</div>
+        <div style="font-size:12px;color:#7A9AB8;margin-top:3px">incl. ~$350 student loan avg</div>
+      </div>
+      <div class="sc dark" style="flex:1;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:#6A5A48;margin-bottom:2px">monthly floor</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--rust-light);line-height:1">$4,900</div>
+        <div style="font-size:12px;color:#5A4A38;margin-top:3px">= $59K/yr just to exist</div>
+      </div>
     </div>
+
     <!-- ROW 2 — Mid-country -->
-    <div style="display:flex;gap:7px;align-items:stretch;flex:1">
-      <div style="width:100px;flex-shrink:0;display:flex;align-items:center"><div style="font-family:var(--hand);font-size:12px;color:var(--sage);line-height:1.4">Columbus /<br>Albuquerque /<br>Chattanooga</div></div>
-      <div class="sc sage" style="flex:1;padding:10px 10px 8px"><div class="sl">1BR alone</div><div class="sn" style="font-size:22px">$1,200</div><div class="ss">still rising fast</div></div>
-      <div class="sc sage" style="flex:1;padding:10px 10px 8px"><div class="sl">groceries + marketplace plan</div><div class="sn" style="font-size:22px">$750</div><div class="ss">subsidized if income qualifies</div></div>
-      <div class="sc sage" style="flex:1;padding:10px 10px 8px"><div class="sl">car required + phone + loans</div><div class="sn" style="font-size:22px">$850</div><div class="ss">car insurance alone ~$150/mo</div></div>
-      <div class="sc" style="flex:1;background:var(--sage);border-color:var(--sage);padding:10px 10px 8px"><div class="sl" style="color:rgba(255,255,255,0.5)">monthly floor</div><div class="sn" style="font-size:22px;color:#fff">$2,800</div><div class="ss" style="color:rgba(255,255,255,0.6)">= $34K/yr — still a real number</div></div>
+    <div style="display:flex;gap:6px;align-items:stretch;flex:1">
+      <div style="width:88px;flex-shrink:0;display:flex;align-items:center">
+        <div style="font-family:var(--hand);font-size:14px;color:var(--sage);line-height:1.35">Columbus /<br>Albuquerque /<br>Chattanooga</div>
+      </div>
+      <div class="sc sage" style="flex:1;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:var(--sage);margin-bottom:2px">1BR alone</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--sage);line-height:1">$1,200</div>
+        <div style="font-size:12px;color:#5A8A6A;margin-top:3px">still rising fast</div>
+      </div>
+      <div class="sc sage" style="flex:1;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:var(--sage);margin-bottom:2px">groceries + marketplace plan</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--sage);line-height:1">$750</div>
+        <div style="font-size:12px;color:#5A8A6A;margin-top:3px">subsidized if income qualifies</div>
+      </div>
+      <div class="sc sage" style="flex:1;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:var(--sage);margin-bottom:2px">car + phone + loans</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--sage);line-height:1">$850</div>
+        <div style="font-size:12px;color:#5A8A6A;margin-top:3px">car required in most mid-cities</div>
+      </div>
+      <div class="sc" style="flex:1;background:var(--sage);border-color:var(--sage);padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:rgba(255,255,255,0.55);margin-bottom:2px">monthly floor</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:#fff;line-height:1">$2,800</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:3px">= $34K/yr — still real</div>
+      </div>
     </div>
+
     <!-- ROW 3 — Scraping by -->
-    <div style="display:flex;gap:7px;align-items:stretch;flex:1">
-      <div style="width:100px;flex-shrink:0;display:flex;align-items:center"><div style="font-family:var(--hand);font-size:12px;color:var(--rust);line-height:1.4">Scraping by /<br>shared housing /<br>rural</div></div>
-      <div class="sc rust" style="flex:1;padding:10px 10px 8px"><div class="sl">shared or rural</div><div class="sn" style="font-size:22px">$700</div><div class="ss">roommates or very rural</div></div>
-      <div class="sc rust" style="flex:1;padding:10px 10px 8px"><div class="sl">bare min., Medicaid if eligible</div><div class="sn" style="font-size:22px">$550</div><div class="ss">skipping the dentist</div></div>
-      <div class="sc rust" style="flex:1;padding:10px 10px 8px"><div class="sl">basics only, loans deferred</div><div class="sn" style="font-size:22px">$550</div><div class="ss">one emergency from real trouble</div></div>
-      <div class="sc" style="flex:1;background:var(--rust);border-color:var(--rust);padding:10px 10px 8px"><div class="sl" style="color:rgba(255,255,255,0.5)">monthly floor</div><div class="sn" style="font-size:22px;color:#fff">$1,800</div><div class="ss" style="color:rgba(255,255,255,0.6)">= $22K/yr — still has to come from somewhere</div></div>
+    <div style="display:flex;gap:6px;align-items:stretch;flex:1">
+      <div style="width:88px;flex-shrink:0;display:flex;align-items:center">
+        <div style="font-family:var(--hand);font-size:14px;color:var(--rust);line-height:1.35">Scraping by /<br>shared / rural</div>
+      </div>
+      <div class="sc rust" style="flex:1;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:var(--rust);margin-bottom:2px">shared or rural housing</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--rust);line-height:1">$700</div>
+        <div style="font-size:12px;color:#A04010;margin-top:3px">roommates or very rural</div>
+      </div>
+      <div class="sc rust" style="flex:1;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:var(--rust);margin-bottom:2px">bare min., Medicaid if eligible</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--rust);line-height:1">$550</div>
+        <div style="font-size:12px;color:#A04010;margin-top:3px">skipping the dentist</div>
+      </div>
+      <div class="sc rust" style="flex:1;padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:var(--rust);margin-bottom:2px">basics only, loans deferred</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--rust);line-height:1">$550</div>
+        <div style="font-size:12px;color:#A04010;margin-top:3px">one emergency from trouble</div>
+      </div>
+      <div class="sc" style="flex:1;background:var(--rust);border-color:var(--rust);padding:6px 8px 5px">
+        <div style="font-family:var(--hand);font-size:13px;color:rgba(255,255,255,0.55);margin-bottom:2px">monthly floor</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:20px;color:#fff;line-height:1">$1,800</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:3px">= $22K/yr — still has to come from somewhere</div>
+      </div>
     </div>
+
   </div>
-  <div style="position:absolute;bottom:11px;left:40px;font-family:var(--hand);font-size:11px;color:var(--muted)">* your share only · add kids? add $1,500–3,000/mo · none of these include studio costs — that's next</div>
-  <span class="snum">05 / 22</span>
+  <div style="position:absolute;bottom:10px;left:32px;font-family:var(--hand);font-size:13px;color:var(--muted)">* your share only &nbsp;·&nbsp; kids? add $1,500–3,000/mo &nbsp;·&nbsp; studio costs not included — that's next</div>
+  <span class="snum">05 / 23</span>
 </div>
 
 <!-- ═══ 06 REVENUE GOAL ═══ -->
@@ -337,7 +397,7 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
       <tbody>
         <tr><td>Your share of living costs — housing, food, health &amp; dental, utilities</td><td class="amt">$45,000</td></tr>
         <tr><td>Business costs — studio, materials, shows, marketing</td><td class="amt">$15,000</td></tr>
-        <tr class="hl"><td>Self-employment tax <em style="font-size:11px;color:var(--rust)">(the one nobody warns you about)</em></td><td class="amt">$20,000</td></tr>
+        <tr class="hl"><td>Self-employment tax <em style="font-size:17px;color:var(--rust)">(the one nobody warns you about)</em></td><td class="amt">$20,000</td></tr>
         <tr><td>Savings — emergency fund, retirement, breathing room</td><td class="amt">$5,000</td></tr>
         <tr><td style="color:var(--sage)"><em>minus: other income (pension, partner contribution, SS, part-time)</em></td><td class="amt" style="color:var(--sage)">− varies</td></tr>
       </tbody>
@@ -349,10 +409,10 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
         <div class="ft">Living + Business<br>+ Taxes + Savings<br>− Other Income</div>
         <div class="fe">Not rich. Not comfortable. Just <span>okay.</span><br>The gap may be smaller than you think.</div>
       </div>
-      <div class="sticky rust" style="font-size:14px;line-height:1.5">The tax line surprises everyone.<br>~25–30% of what you make, gone before you spend it.</div>
+      <div class="sticky rust" style="font-size:18px;line-height:1.5">The tax line surprises everyone.<br>~25–30% of what you make, gone before you spend it.</div>
     </div>
   </div>
-  <span class="snum">06 / 22</span>
+  <span class="snum">06 / 23</span>
 </div>
 
 <!-- ═══ 07 GALLERY MATH ═══ -->
@@ -363,17 +423,18 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
   </div>
   <div class="slide-body" style="align-items:center">
     <table class="dtable" style="flex:1.2">
-      <thead><tr><th>gallery deal — a real example</th><th class="amt">the numbers</th></tr></thead>
+      <thead><tr><th>gallery deal — real example</th><th class="amt">the numbers</th></tr></thead>
       <tbody>
         <tr><td>Your piece is priced at</td><td class="amt">$600</td></tr>
         <tr><td>Gallery takes 50% consignment</td><td class="amt">− $300</td></tr>
         <tr><td>You take home</td><td class="amt">$300</td></tr>
-        <tr style="border-top:1.5px solid var(--border)"><td>Materials cost</td><td class="amt">− $45</td></tr>
+        <tr><td>Materials cost</td><td class="amt">− $45</td></tr>
         <tr><td>Studio overhead per piece</td><td class="amt">− $30</td></tr>
-        <tr class="hl"><td>What's left for your time</td><td class="amt">$225</td></tr>
-        <tr class="hl"><td>Hours to make it (be honest)</td><td class="amt">8 hrs</td></tr>
       </tbody>
-      <tfoot><tr><td>Your effective hourly rate</td><td class="amt" style="color:var(--rust)">$28/hr</td></tr></tfoot>
+      <tfoot>
+        <tr><td>Left for your time ($300 − $75 costs)</td><td class="amt">$225</td></tr>
+        <tr><td>Your effective hourly rate ($225 ÷ 8 hrs)</td><td class="amt" style="color:var(--rust)">$28/hr</td></tr>
+      </tfoot>
     </table>
     <div style="flex:0.8;display:flex;flex-direction:column;gap:12px;justify-content:center">
       <div class="fbox">
@@ -381,10 +442,10 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
         <div class="ft">Galleries aren't the enemy.<br>But the math<br>has to work for <em>you.</em></div>
         <div class="fe">Know your floor. Price for <span>the split,</span> not before it.</div>
       </div>
-      <div class="sticky" style="font-size:14px;line-height:1.5">If a gallery takes 50%, your price to them needs to be 2× what you'd charge direct. Price it that way from the start.</div>
+      <div class="sticky" style="font-size:17px;line-height:1.4">If a gallery takes 50%, your price to them needs to be 2× what you'd charge direct. Price it that way from the start.</div>
     </div>
   </div>
-  <span class="snum">07 / 22</span>
+  <span class="snum">07 / 23</span>
 </div>
 
 <!-- ═══ 08 THE HOURLY RATE GUT PUNCH ═══ -->
@@ -393,50 +454,50 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
     <div class="stag" style="color:#F2A070">the gut-punch slide</div>
     <h2 style="margin-bottom:18px;font-size:36px">Most artists are working for $8–12 an hour.</h2>
     <div style="display:flex;gap:12px;width:100%;margin-bottom:14px">
-      <div style="flex:1;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:4px;padding:14px 16px">
-        <div style="font-family:var(--hand);font-size:15px;color:#A89878;margin-bottom:6px">you price the piece at</div>
-        <div style="font-family:var(--serif);font-style:italic;font-size:30px;color:#F5EDE0">$150</div>
-        <div style="font-size:12px;color:#7A6A50;margin-top:4px">retail price</div>
+      <div style="flex:1;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.25);border-radius:4px;padding:14px 16px">
+        <div style="font-family:var(--hand);font-size:17px;color:#D4C4A0;margin-bottom:6px">you price the piece at</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:30px;color:#FFFFFF">$150</div>
+        <div style="font-size:18px;color:#C8B898;margin-top:4px">retail price</div>
       </div>
-      <div style="flex:1;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:4px;padding:14px 16px">
-        <div style="font-family:var(--hand);font-size:15px;color:#A89878;margin-bottom:6px">net after expenses</div>
-        <div style="font-family:var(--serif);font-style:italic;font-size:30px;color:#F5EDE0">$90</div>
-        <div style="font-size:12px;color:#7A6A50;margin-top:4px">materials, overhead, fees</div>
+      <div style="flex:1;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.25);border-radius:4px;padding:14px 16px">
+        <div style="font-family:var(--hand);font-size:17px;color:#D4C4A0;margin-bottom:6px">net after expenses</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:30px;color:#FFFFFF">$90</div>
+        <div style="font-size:18px;color:#C8B898;margin-top:4px">materials, overhead, fees</div>
       </div>
-      <div style="flex:1;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:4px;padding:14px 16px">
-        <div style="font-family:var(--hand);font-size:15px;color:#A89878;margin-bottom:6px">hours (be honest)</div>
-        <div style="font-family:var(--serif);font-style:italic;font-size:30px;color:#F5EDE0">8 hrs</div>
-        <div style="font-size:12px;color:#7A6A50;margin-top:4px">including setup + cleanup</div>
+      <div style="flex:1;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.25);border-radius:4px;padding:14px 16px">
+        <div style="font-family:var(--hand);font-size:17px;color:#D4C4A0;margin-bottom:6px">hours (be honest)</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:30px;color:#FFFFFF">8 hrs</div>
+        <div style="font-size:18px;color:#C8B898;margin-top:4px">including setup + cleanup</div>
       </div>
-      <div style="flex:1;background:rgba(196,80,26,0.3);border:1px solid rgba(196,80,26,0.5);border-radius:4px;padding:14px 16px">
-        <div style="font-family:var(--hand);font-size:15px;color:#F2A070;margin-bottom:6px">your hourly rate</div>
-        <div style="font-family:var(--serif);font-style:italic;font-size:30px;color:#F2A070">$11.25</div>
-        <div style="font-size:12px;color:rgba(242,160,112,0.6);margin-top:4px">less than minimum wage</div>
+      <div style="flex:1;background:rgba(196,80,26,0.5);border:1px solid rgba(196,80,26,0.8);border-radius:4px;padding:14px 16px">
+        <div style="font-family:var(--hand);font-size:17px;color:#FFB080;margin-bottom:6px">your hourly rate</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:30px;color:#FFB080">$11.25</div>
+        <div style="font-size:18px;color:#FFB080;margin-top:4px">less than minimum wage</div>
       </div>
     </div>
     <!-- Tradesperson comparison row -->
     <div style="display:flex;gap:8px;width:100%;margin-bottom:14px">
-      <div style="font-family:var(--hand);font-size:14px;color:#6A5A48;display:flex;align-items:center;min-width:90px">compare to:</div>
-      <div style="flex:1;background:rgba(61,107,82,0.2);border:1px solid rgba(61,107,82,0.35);border-radius:4px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center">
-        <span style="font-family:var(--hand);font-size:15px;color:#90C8A0">Electrician</span>
+      <div style="font-family:var(--hand);font-size:18px;color:#C8B898;display:flex;align-items:center;min-width:90px">compare to:</div>
+      <div style="flex:1;background:rgba(61,107,82,0.35);border:1px solid rgba(61,107,82,0.6);border-radius:4px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center">
+        <span style="font-family:var(--hand);font-size:17px;color:#90C8A0">Electrician</span>
         <span style="font-family:var(--serif);font-style:italic;font-size:17px;color:#90C8A0;font-weight:600">$85–150/hr</span>
       </div>
-      <div style="flex:1;background:rgba(61,107,82,0.2);border:1px solid rgba(61,107,82,0.35);border-radius:4px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center">
-        <span style="font-family:var(--hand);font-size:15px;color:#90C8A0">Plumber</span>
+      <div style="flex:1;background:rgba(61,107,82,0.35);border:1px solid rgba(61,107,82,0.6);border-radius:4px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center">
+        <span style="font-family:var(--hand);font-size:17px;color:#90C8A0">Plumber</span>
         <span style="font-family:var(--serif);font-style:italic;font-size:17px;color:#90C8A0;font-weight:600">$75–130/hr</span>
       </div>
-      <div style="flex:1;background:rgba(61,107,82,0.2);border:1px solid rgba(61,107,82,0.35);border-radius:4px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center">
-        <span style="font-family:var(--hand);font-size:15px;color:#90C8A0">Carpenter</span>
+      <div style="flex:1;background:rgba(61,107,82,0.35);border:1px solid rgba(61,107,82,0.6);border-radius:4px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center">
+        <span style="font-family:var(--hand);font-size:17px;color:#90C8A0">Carpenter</span>
         <span style="font-family:var(--serif);font-style:italic;font-size:17px;color:#90C8A0;font-weight:600">$70–120/hr</span>
       </div>
-      <div style="flex:1;background:rgba(61,107,82,0.2);border:1px solid rgba(61,107,82,0.35);border-radius:4px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center">
-        <span style="font-family:var(--hand);font-size:15px;color:#90C8A0">Auto Mechanic</span>
+      <div style="flex:1;background:rgba(61,107,82,0.35);border:1px solid rgba(61,107,82,0.6);border-radius:4px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center">
+        <span style="font-family:var(--hand);font-size:17px;color:#90C8A0">Auto Mechanic</span>
         <span style="font-family:var(--serif);font-style:italic;font-size:17px;color:#90C8A0;font-weight:600">$80–130/hr</span>
       </div>
     </div>
-    <div style="font-family:var(--hand);font-size:18px;color:#A89878">They work with their hands too. Nobody questions what a plumber charges. <span style="color:#F5EDE0">Why do we accept less?</span></div>
+    <div style="font-family:var(--hand);font-size:18px;color:#E8D8B8">They work with their hands too. Nobody questions what a plumber charges. <span style="color:#F5EDE0">Why do we accept less?</span></div>
   </div>
-  <span class="snum-lt">08 / 22</span>
+  <span class="snum-lt">08 / 23</span>
 </div>
 
 <!-- ═══ 09 WHY WE UNDERPRICE ═══ -->
@@ -461,7 +522,7 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
       </div>
     </div>
   </div>
-  <span class="snum">09 / 22</span>
+  <span class="snum">09 / 23</span>
 </div>
 
 <!-- ═══ 10 PRICING IN PRACTICE ═══ -->
@@ -487,10 +548,10 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
         <div class="ft">Materials + Time<br>+ Overhead + Profit</div>
         <div class="fe">Then: add <span>story, scarcity, skill.</span><br>That's where $137 becomes $280.</div>
       </div>
-      <div class="sticky" style="font-size:14px;transform:rotate(0.5deg);line-height:1.5">Most artists sell this for $45–60.<br>After the split.<br>After expenses.<br>After 3 hours of their life.</div>
+      <div class="sticky" style="font-size:18px;transform:rotate(0.5deg);line-height:1.5">Most artists sell this for $45–60.<br>After the split.<br>After expenses.<br>After 3 hours of their life.</div>
     </div>
   </div>
-  <span class="snum">10 / 22</span>
+  <span class="snum">10 / 23</span>
 </div>
 
 <!-- ═══ 11 RAISING YOUR PRICES ═══ -->
@@ -504,9 +565,9 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
       <div class="col">
         <div class="col-h rust">what usually happens</div>
         <ul class="blist">
-          <li><span class="arr">→</span>Some people who bought at the low price won't follow. That's okay — they weren't your collector, they were a bargain shopper.</li>
+          <li><span class="arr">→</span>Some buyers won't follow. That's okay — bargain shoppers weren't going to sustain your practice anyway.</li>
           <li><span class="arr">→</span>Higher prices signal higher value. The work looks more serious. People treat it differently.</li>
-          <li><span class="arr">→</span>You sell fewer pieces, but you make the same — or more — and with less volume pressure.</li>
+          <li><span class="arr">→</span>Fewer pieces, same money — and less volume pressure.</li>
         </ul>
       </div>
       <div class="col">
@@ -514,35 +575,35 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
         <ul class="blist">
           <li><span class="arr">→</span>Raise incrementally — 15–20% at a time, not overnight doubling</li>
           <li><span class="arr">→</span>Announce it honestly: "my prices are going up in March"</li>
-          <li><span class="arr">→</span>Improve your presentation simultaneously — better photos, better framing, better story</li>
-          <li><span class="arr">→</span>Hold the price. Don't discount. Discounting tells people the real price was fake.</li>
+          <li><span class="arr">→</span>Improve your presentation — better photos, better framing, better story</li>
+          <li><span class="arr">→</span>Hold the price. Never discount — it tells people the real price was fake.</li>
         </ul>
       </div>
     </div>
   </div>
-  <span class="snum">11 / 22</span>
+  <span class="snum">11 / 23</span>
 </div>
 
 <!-- ═══ 12 SELLING WITHOUT CRINGING ═══ -->
 <div class="slide s-content" style="background:#4A3D30;flex-direction:column" data-notes="Keep this light. The cringe is real and relatable. Selling doesn't make you a sellout — invisibility does. If nobody knows your work exists, nobody can support it. The artist statement example always gets a laugh. Use your own bad old statement if you have one.">
   <div style="padding:44px 56px;display:flex;flex-direction:row;flex:1;gap:40px;align-items:center">
     <div style="flex:1;display:flex;flex-direction:column;justify-content:center">
-      <div style="font-family:var(--hand);font-size:16px;color:var(--rust-light);margin-bottom:14px">on selling</div>
+      <div style="font-family:var(--hand);font-size:18px;color:var(--rust-light);margin-bottom:14px">on selling</div>
       <h2 style="font-family:var(--serif);font-style:italic;font-size:40px;line-height:1.12;color:var(--warm-white);font-weight:300;margin-bottom:20px">Selling doesn't make you<br>less of an artist.<br>It makes you a <em style="color:#90C898;font-style:normal">visible</em> one.</h2>
-      <div style="font-family:var(--hand);font-size:16px;color:#A89878;line-height:1.5">If nobody knows your work exists,<br>nobody can support it.</div>
+      <div style="font-family:var(--hand);font-size:18px;color:#A89878;line-height:1.5">If nobody knows your work exists,<br>nobody can support it.</div>
     </div>
     <div style="flex:1;display:flex;flex-direction:column;gap:14px;justify-content:center">
       <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:16px 18px">
-        <div style="font-family:var(--hand);font-size:13px;color:#C08878;margin-bottom:6px">❌ nobody connects with this</div>
-        <div style="font-family:var(--serif);font-style:italic;font-size:15px;color:#7A6A58;line-height:1.5">"My work explores liminal spaces of postmodern erosion and the ephemeral nature of—"</div>
+        <div style="font-family:var(--hand);font-size:18px;color:#C08878;margin-bottom:6px">❌ nobody connects with this</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:17px;color:#A89878;line-height:1.5">"My work explores liminal spaces of postmodern erosion and the ephemeral nature of—"</div>
       </div>
       <div style="background:rgba(61,107,82,0.25);border:1px solid rgba(61,107,82,0.4);border-radius:4px;padding:16px 18px">
-        <div style="font-family:var(--hand);font-size:13px;color:#90C898;margin-bottom:6px">✓ this actually connects</div>
-        <div style="font-family:var(--serif);font-style:italic;font-size:15px;color:var(--warm-white);line-height:1.5">"I make functional glass inspired by the foggy coastline I grew up near. Each piece takes about a day. I've been doing this for eight years and it still surprises me."</div>
+        <div style="font-family:var(--hand);font-size:18px;color:#90C898;margin-bottom:6px">✓ this actually connects</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:17px;color:var(--warm-white);line-height:1.5">"I make functional glass inspired by the foggy coastline I grew up near. Each piece takes about a day. I've been doing this for eight years and it still surprises me."</div>
       </div>
     </div>
   </div>
-  <span class="snum-lt">12 / 22</span>
+  <span class="snum-lt">12 / 23</span>
 </div>
 
 <!-- ═══ 13 DIGITAL — PICK ONE ═══ -->
@@ -558,19 +619,19 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
         <div style="display:flex;flex-direction:column;gap:10px">
           <div style="display:flex;gap:12px;align-items:baseline">
             <span style="font-family:var(--hand);font-size:17px;color:var(--rust);flex-shrink:0;width:20px">→</span>
-            <div style="font-size:14px;font-weight:300;color:var(--ink);line-height:1.4"><strong style="font-weight:500">Instagram</strong> — still great for visual work, if you'll actually use it</div>
+            <div style="font-size:17px;font-weight:300;color:var(--ink);line-height:1.45"><strong style="font-weight:500">Instagram</strong> — still great for visual work, if you'll actually use it</div>
           </div>
           <div style="display:flex;gap:12px;align-items:baseline">
             <span style="font-family:var(--hand);font-size:17px;color:var(--rust);flex-shrink:0;width:20px">→</span>
-            <div style="font-size:14px;font-weight:300;color:var(--ink);line-height:1.4"><strong style="font-weight:500">Email newsletter</strong> — underrated, direct, nobody's algorithm controls it</div>
+            <div style="font-size:17px;font-weight:300;color:var(--ink);line-height:1.45"><strong style="font-weight:500">Email newsletter</strong> — underrated, direct, nobody's algorithm controls it</div>
           </div>
           <div style="display:flex;gap:12px;align-items:baseline">
             <span style="font-family:var(--hand);font-size:17px;color:var(--rust);flex-shrink:0;width:20px">→</span>
-            <div style="font-size:14px;font-weight:300;color:var(--ink);line-height:1.4"><strong style="font-weight:500">Your own website</strong> — slow to build an audience, but you own it forever</div>
+            <div style="font-size:17px;font-weight:300;color:var(--ink);line-height:1.45"><strong style="font-weight:500">Your own website</strong> — slow to build an audience, but you own it forever</div>
           </div>
           <div style="display:flex;gap:12px;align-items:baseline">
             <span style="font-family:var(--hand);font-size:17px;color:var(--rust);flex-shrink:0;width:20px">→</span>
-            <div style="font-size:14px;font-weight:300;color:var(--ink);line-height:1.4"><strong style="font-weight:500">TikTok / video</strong> — if you genuinely enjoy it, huge reach. If not, skip it.</div>
+            <div style="font-size:17px;font-weight:300;color:var(--ink);line-height:1.45"><strong style="font-weight:500">TikTok / video</strong> — if you genuinely enjoy it, huge reach. If not, skip it.</div>
           </div>
         </div>
       </div>
@@ -579,25 +640,25 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
         <div style="display:flex;flex-direction:column;gap:10px">
           <div style="display:flex;gap:12px;align-items:baseline">
             <span style="font-family:var(--hand);font-size:17px;color:var(--rust);flex-shrink:0;width:20px">→</span>
-            <div style="font-size:14px;font-weight:300;color:var(--ink);line-height:1.4">Posts that say <em>why you made something</em> — not just that it's for sale</div>
+            <div style="font-size:17px;font-weight:300;color:var(--ink);line-height:1.45">Posts that say <em>why you made something</em> — not just that it's for sale</div>
           </div>
           <div style="display:flex;gap:12px;align-items:baseline">
             <span style="font-family:var(--hand);font-size:17px;color:var(--rust);flex-shrink:0;width:20px">→</span>
-            <div style="font-size:14px;font-weight:300;color:var(--ink);line-height:1.4">Process shots — people are fascinated by how glass is made. Use that.</div>
+            <div style="font-size:17px;font-weight:300;color:var(--ink);line-height:1.45">Process shots — people are fascinated by how glass is made. Use that.</div>
           </div>
           <div style="display:flex;gap:12px;align-items:baseline">
             <span style="font-family:var(--hand);font-size:17px;color:var(--rust);flex-shrink:0;width:20px">→</span>
-            <div style="font-size:14px;font-weight:300;color:var(--ink);line-height:1.4">A clear, obvious link to where they can buy. <strong style="font-weight:500">Don't make them hunt for it.</strong></div>
+            <div style="font-size:17px;font-weight:300;color:var(--ink);line-height:1.45">A clear, obvious link to where they can buy. <strong style="font-weight:500">Don't make them hunt for it.</strong></div>
           </div>
           <div style="display:flex;gap:12px;align-items:baseline">
             <span style="font-family:var(--hand);font-size:17px;color:var(--rust);flex-shrink:0;width:20px">→</span>
-            <div style="font-size:14px;font-weight:300;color:var(--ink);line-height:1.4">Consistent beats perfect. Imperfect and regular beats beautiful and once a month.</div>
+            <div style="font-size:17px;font-weight:300;color:var(--ink);line-height:1.45">Consistent beats perfect. Imperfect and regular beats beautiful and once a month.</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <span class="snum">13 / 22</span>
+  <span class="snum">13 / 23</span>
 </div>
 
 <!-- ═══ 14 OPERATIONS ═══ -->
@@ -611,12 +672,12 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
       <li><span class="ck">✓</span><div><strong>Separate bank account</strong> — the single biggest clarity move you can make. Do it this week.</div></li>
       <li><span class="ck">✓</span><div><strong>Track every dollar in and out</strong> — materials, mileage, show fees, supplies. All of it is deductible.</div></li>
       <li><span class="ck">✓</span><div><strong>Set aside 25–30% for taxes</strong> — before you spend it. Quarterly estimated payments. Not optional.</div></li>
-      <li><span class="ck">✓</span><div><strong>Sales tax</strong> — if you sell direct (shows, website, studio), you may be required to collect and remit it. State rules vary. It's a pass-through, not your income — but the penalty for ignoring it is real. Check your state.</div></li>
+      <li><span class="ck">✓</span><div><strong>Sales tax</strong> — selling direct may require you to collect &amp; remit it. State rules vary. It's a pass-through but the penalty for ignoring it is real. Check your state.</div></li>
       <li><span class="ck">✓</span><div><strong>Use a contract for every job</strong> — especially with people you trust. <em>Especially</em> with people you trust.</div></li>
       <li><span class="ck">✓</span><div><strong>Studio insurance + simple bookkeeping</strong> — Wave is free. A spreadsheet beats nothing. One fire shouldn't end your practice.</div></li>
     </ul>
   </div>
-  <span class="snum">14 / 22</span>
+  <span class="snum">14 / 23</span>
 </div>
 
 <!-- ═══ 15 DAY JOB IS NOT FAILURE ═══ -->
@@ -631,7 +692,7 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
         <li><span class="arr">→</span><div>A day job means you don't have to make work that <strong>sells.</strong> You can make work that <strong>matters.</strong></div></li>
         <li><span class="arr">→</span><div>It means you can say no to bad opportunities, bad galleries, bad clients. <strong>Financial pressure kills artistic integrity faster than anything.</strong></div></li>
         <li><span class="arr">→</span><div>It means you can invest in your practice — better materials, better equipment — without terror.</div></li>
-        <li><span class="arr">→</span><div>Philip Glass drove a cab at 41 — after <em>Einstein on the Beach.</em> T.S. Eliot worked at a bank. Charles Ives sold insurance. Maira Kalman illustrated the New Yorker while doing client work. Grandma Moses farmed until she was 78. <strong>The full-time artist myth harms more careers than it builds.</strong></div></li>
+        <li><span class="arr">→</span><div>Philip Glass drove a cab at 41 — after <em>Einstein on the Beach.</em> T.S. Eliot worked at a bank. Maira Kalman illustrated the New Yorker while doing client work. Grandma Moses farmed until 78. <strong>The full-time artist myth harms more careers than it builds.</strong></div></li>
       </ul>
     </div>
     <div style="flex:0.5;display:flex;flex-direction:column;gap:12px;justify-content:center">
@@ -642,7 +703,7 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
       </div>
     </div>
   </div>
-  <span class="snum">15 / 22</span>
+  <span class="snum">15 / 23</span>
 </div>
 
 <!-- ═══ 16 BLENDED INCOME ═══ -->
@@ -661,9 +722,9 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
       <div style="height:1.5px;background:var(--border);margin:2px 0"></div>
       <div class="ibar total"><div class="ibl">Total</div><div class="itrack"><div class="ifill" style="width:100%;background:var(--ink)"></div></div><div class="iamt">$85K</div></div>
     </div>
-    <div style="font-family:var(--hand);font-size:16px;color:var(--muted)">When sales are slow, teaching holds you. When teaching is slow, commissions hold you. That's not selling out. That's how creative careers survive.</div>
+    <div style="font-family:var(--hand);font-size:18px;color:var(--ink)">When sales are slow, teaching holds you. When teaching is slow, commissions hold you. That's not selling out. That's how creative careers survive.</div>
   </div>
-  <span class="snum">16 / 22</span>
+  <span class="snum">16 / 23</span>
 </div>
 
 <!-- ═══ 17 QUOTE ═══ -->
@@ -675,7 +736,7 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
     <em>And give yourself permission to build it slowly.</em>
   </blockquote>
   <cite>— the whole point of this session</cite>
-  <span class="snum-lt">17 / 22</span>
+  <span class="snum-lt">17 / 23</span>
 </div>
 
 <!-- ═══ 18 STRUCTURED Q&A ═══ -->
@@ -686,64 +747,64 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
   </div>
   <div class="slide-body">
     <div style="flex:1;display:flex;flex-direction:column;gap:10px;justify-content:center">
-      <div style="font-family:var(--hand);font-size:16px;color:var(--muted);margin-bottom:4px">turn to someone near you — 2 minutes: what's your biggest question about the business side?</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:11px 13px;font-family:var(--hand);font-size:15px;color:var(--ink)">"When a gallery ghosts me after a submission — what do I do?"</div>
-        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:11px 13px;font-family:var(--hand);font-size:15px;color:var(--ink)">"How do I say no to unpaid work without burning bridges?"</div>
-        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:11px 13px;font-family:var(--hand);font-size:15px;color:var(--ink)">"Do I need an LLC? When does that matter?"</div>
-        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:11px 13px;font-family:var(--hand);font-size:15px;color:var(--ink)">"How do I handle a commission that goes sideways?"</div>
-        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:11px 13px;font-family:var(--hand);font-size:15px;color:var(--ink)">"What do I actually deduct on my taxes as an artist?"</div>
-        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:11px 13px;font-family:var(--hand);font-size:15px;color:var(--ink)">"I feel like a fraud charging real prices. Is that normal?"</div>
+      <div style="font-family:var(--hand);font-size:18px;color:var(--muted);margin-bottom:8px">turn to someone near you — 2 minutes: what's your biggest question about the business side?</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 12px;font-family:var(--hand);font-size:18px;color:var(--ink)">"When a gallery ghosts me after a submission — what do I do?"</div>
+        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 12px;font-family:var(--hand);font-size:18px;color:var(--ink)">"How do I say no to unpaid work without burning bridges?"</div>
+        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 12px;font-family:var(--hand);font-size:18px;color:var(--ink)">"Do I need an LLC? When does that matter?"</div>
+        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 12px;font-family:var(--hand);font-size:18px;color:var(--ink)">"How do I handle a commission that goes sideways?"</div>
+        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 12px;font-family:var(--hand);font-size:18px;color:var(--ink)">"What do I actually deduct on my taxes as an artist?"</div>
+        <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 12px;font-family:var(--hand);font-size:18px;color:var(--ink)">"I feel like a fraud charging real prices. Is that normal?"</div>
       </div>
     </div>
   </div>
-  <span class="snum">18 / 22</span>
+  <span class="snum">18 / 23</span>
 </div>
 
 <!-- ═══ 19 Q&A ANSWERS PART 1 ═══ -->
 <div class="slide s-content" style="background:var(--paper)" data-notes="Don't read these off the slide — they're prompts for you to riff on. Gallery ghosting: be honest there's no magic fix, but following up once with a specific question beats silence. LLC: 'probably not yet — a separate bank account matters more right now.' Read the unpaid work script out loud so people can write it down — they will use it.">
-  <div class="slide-header" style="margin-bottom:16px">
+  <div class="slide-header" style="margin-bottom:10px">
     <div class="eyebrow">real talk — the short answers  (1 of 2)</div>
     <h2>Real questions. Real answers. No consulting speak.</h2>
   </div>
-  <div class="slide-body" style="flex-direction:column;gap:14px">
-    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:16px 20px">
+  <div class="slide-body" style="flex-direction:column;gap:10px">
+    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:12px 16px">
       <div style="font-family:var(--hand);font-size:18px;color:var(--muted);margin-bottom:6px">"When a gallery ghosts me after a submission—"</div>
-      <div style="font-size:16px;font-weight:300;color:var(--ink);line-height:1.5">Follow up once, specifically: <em>"Is there anything else you need from me?"</em> If still nothing — move on. Galleries that ghost aren't partners. Your time is finite.</div>
+      <div style="font-size:18px;font-weight:300;color:var(--ink);line-height:1.5">Follow up once, specifically: <em>"Is there anything else you need from me?"</em> If still nothing — move on. Galleries that ghost aren't partners. Your time is finite.</div>
     </div>
-    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:16px 20px">
+    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:12px 16px">
       <div style="font-family:var(--hand);font-size:18px;color:var(--muted);margin-bottom:6px">"How do I say no to unpaid work?"</div>
-      <div style="font-size:16px;font-weight:300;color:var(--ink);line-height:1.5"><em>"I don't have the bandwidth right now, but I'd love to be considered for paid opportunities."</em><br>Full stop. No apology. No explanation. Write that down — you will use it.</div>
+      <div style="font-size:18px;font-weight:300;color:var(--ink);line-height:1.5"><em>"I don't have the bandwidth right now, but I'd love to be considered for paid opportunities."</em><br>Full stop. No apology. No explanation. Write that down — you will use it.</div>
     </div>
-    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:16px 20px">
+    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:12px 16px">
       <div style="font-family:var(--hand);font-size:18px;color:var(--muted);margin-bottom:6px">"Do I need an LLC?"</div>
-      <div style="font-size:16px;font-weight:300;color:var(--ink);line-height:1.5">Probably not yet. A separate bank account matters more right now. An LLC makes sense when you have real revenue, employees, or liability exposure. Ask an accountant — not the internet.</div>
+      <div style="font-size:18px;font-weight:300;color:var(--ink);line-height:1.5">Probably not yet. A separate bank account matters more right now. An LLC makes sense when you have real revenue, employees, or liability exposure. Ask an accountant — not the internet.</div>
     </div>
   </div>
-  <span class="snum">19 / 22</span>
+  <span class="snum">19 / 23</span>
 </div>
 
 <!-- ═══ 20 Q&A ANSWERS PART 2 ═══ -->
 <div class="slide s-content" style="background:var(--paper)" data-notes="The fraud one always gets the most reaction. Say it slowly and clearly: 'Yes. Completely normal. It never fully goes away.' Pause. 'The artists charging confidently feel it too. They've just decided to charge anyway.' Let that sit before you move on. For the tax list — tell people to photograph this slide.">
-  <div class="slide-header" style="margin-bottom:16px">
+  <div class="slide-header" style="margin-bottom:10px">
     <div class="eyebrow">real talk — the short answers  (2 of 2)</div>
     <h2>A few more. Including the one everyone's thinking.</h2>
   </div>
-  <div class="slide-body" style="flex-direction:column;gap:14px">
-    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:16px 20px">
+  <div class="slide-body" style="flex-direction:column;gap:10px">
+    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:12px 16px">
       <div style="font-family:var(--hand);font-size:18px;color:var(--muted);margin-bottom:6px">"How do I handle a commission gone sideways?"</div>
-      <div style="font-size:16px;font-weight:300;color:var(--ink);line-height:1.5">A contract with a 30–50% deposit upfront (non-refundable) fixes 80% of this before it starts. No contract means you're negotiating from zero after the fact. Use contracts even with friends. <em>Especially</em> with friends.</div>
+      <div style="font-size:18px;font-weight:300;color:var(--ink);line-height:1.5">A contract with a 30–50% deposit upfront (non-refundable) fixes 80% of this before it starts. No contract means you're negotiating from zero after the fact. Use contracts even with friends. <em>Especially</em> with friends.</div>
     </div>
-    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:16px 20px">
+    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:12px 16px">
       <div style="font-family:var(--hand);font-size:18px;color:var(--muted);margin-bottom:6px">"What can I actually deduct on my taxes?"</div>
-      <div style="font-size:16px;font-weight:300;color:var(--ink);line-height:1.5">Materials, studio rent, equipment, show fees, mileage, professional development, portion of your phone and home studio. Track everything — your accountant can only deduct what you documented.</div>
+      <div style="font-size:18px;font-weight:300;color:var(--ink);line-height:1.5">Materials, studio rent, equipment, show fees, mileage, professional development, portion of your phone and home studio. Track everything — your accountant can only deduct what you documented.</div>
     </div>
-    <div style="background:var(--rust-pale);border:1.5px solid var(--rust-light);border-radius:4px;padding:16px 20px">
+    <div style="background:var(--rust-pale);border:1.5px solid var(--rust-light);border-radius:4px;padding:12px 16px">
       <div style="font-family:var(--hand);font-size:18px;color:var(--rust);margin-bottom:6px">"I feel like a fraud charging real prices. Is that normal?"</div>
-      <div style="font-size:16px;font-weight:300;color:var(--ink);line-height:1.5">Yes. Completely normal. It never fully goes away. The artists charging confidently feel it too — they've just decided to charge anyway. <strong style="font-weight:600">That's the whole move.</strong></div>
+      <div style="font-size:18px;font-weight:300;color:var(--ink);line-height:1.5">Yes. Completely normal. It never fully goes away. The artists charging confidently feel it too — they've just decided to charge anyway. <strong style="font-weight:600">That's the whole move.</strong></div>
     </div>
   </div>
-  <span class="snum">20 / 22</span>
+  <span class="snum">20 / 23</span>
 </div>
 
 <!-- ═══ 21 MONDAY MORNING ═══ -->
@@ -755,24 +816,24 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
   <div class="slide-body">
     <div class="statrow">
       <div class="sc" style="flex:1;background:var(--rust-pale);border-color:var(--rust-light)">
-        <div class="sl" style="color:var(--rust);font-size:16px">① today</div>
+        <div class="sl" style="color:var(--rust);font-size:18px">① today</div>
         <div class="sn" style="font-size:18px;color:var(--rust);font-style:normal;font-family:var(--hand)">Finish your worksheet</div>
-        <div class="ss" style="color:#904010;font-size:12px;line-height:1.45">You have the sheet. Fill in the blanks that are still blank. Land on your actual revenue goal before you go to bed.</div>
+        <div class="ss" style="color:#904010;font-size:17px;line-height:1.45">You have the sheet. Fill in the blanks that are still blank. Land on your actual revenue goal before you go to bed.</div>
       </div>
       <div class="sc" style="flex:1;background:var(--gold-pale);border-color:var(--gold-light)">
-        <div class="sl" style="color:var(--gold);font-size:16px">② this week</div>
+        <div class="sl" style="color:var(--gold);font-size:18px">② this week</div>
         <div class="sn" style="font-size:18px;color:var(--gold);font-style:normal;font-family:var(--hand)">Raise one price</div>
-        <div class="ss" style="color:#806010;font-size:12px;line-height:1.45">Pick one piece on your site or Etsy or your next show list. Run the real math. Set a price that actually works. Just one.</div>
+        <div class="ss" style="color:#806010;font-size:17px;line-height:1.45">Pick one piece on your site or Etsy or your next show list. Run the real math. Set a price that actually works. Just one.</div>
       </div>
       <div class="sc" style="flex:1;background:var(--sage-pale);border-color:var(--sage-light)">
-        <div class="sl" style="color:var(--sage);font-size:16px">③ this month</div>
+        <div class="sl" style="color:var(--sage);font-size:18px">③ this month</div>
         <div class="sn" style="font-size:18px;color:var(--sage);font-style:normal;font-family:var(--hand)">Open a separate account</div>
-        <div class="ss" style="color:#2A5038;font-size:12px;line-height:1.45">A business checking account. Takes 20 minutes. Changes everything about how clearly you can see what the work is actually making.</div>
+        <div class="ss" style="color:#2A5038;font-size:17px;line-height:1.45">A business checking account. Takes 20 minutes. Changes everything about how clearly you can see what the work is actually making.</div>
       </div>
     </div>
-    <div style="margin-top:12px;font-family:var(--hand);font-size:16px;color:var(--muted);text-align:center">Small. Specific. This week. Not "someday."</div>
+    <div style="margin-top:12px;font-family:var(--hand);font-size:18px;color:var(--muted);text-align:center">Small. Specific. This week. Not "someday."</div>
   </div>
-  <span class="snum">21 / 22</span>
+  <span class="snum">21 / 23</span>
 </div>
 
 <!-- ═══ 20 CLOSING ═══ -->
@@ -789,12 +850,48 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
     </p>
   </div>
   <div style="width:290px;flex-shrink:0;background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:24px 22px;gap:8px;border-left:2px dashed var(--border)">
-    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 11px;font-size:12px;color:var(--ink);font-weight:300;line-height:1.5"><strong style="display:block;font-family:var(--hand);font-size:14px;color:var(--rust);margin-bottom:3px">take home</strong>Your worksheet — your actual revenue goal, your floor, your price</div>
-    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 11px;font-size:12px;color:var(--ink);font-weight:300;line-height:1.5"><strong style="display:block;font-family:var(--hand);font-size:14px;color:var(--rust);margin-bottom:3px">this week</strong>Raise one price. Run the real math first. Then hold it.</div>
-    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 11px;font-size:12px;color:var(--ink);font-weight:300;line-height:1.5"><strong style="display:block;font-family:var(--hand);font-size:14px;color:var(--rust);margin-bottom:3px">you're not alone</strong>Every artist in this room is figuring this out at the same time</div>
-    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 11px;font-size:12px;color:var(--ink);font-weight:300;line-height:1.5"><strong style="display:block;font-family:var(--hand);font-size:14px;color:var(--rust);margin-bottom:3px">one last thing</strong>A day job and making art aren't opposites. They're a plan.</div>
+    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 11px;font-size:17px;color:var(--ink);font-weight:300;line-height:1.5"><strong style="display:block;font-family:var(--hand);font-size:17px;color:var(--rust);margin-bottom:3px">take home</strong>Your worksheet — your actual revenue goal, your floor, your price</div>
+    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 11px;font-size:17px;color:var(--ink);font-weight:300;line-height:1.5"><strong style="display:block;font-family:var(--hand);font-size:17px;color:var(--rust);margin-bottom:3px">this week</strong>Raise one price. Run the real math first. Then hold it.</div>
+    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 11px;font-size:17px;color:var(--ink);font-weight:300;line-height:1.5"><strong style="display:block;font-family:var(--hand);font-size:17px;color:var(--rust);margin-bottom:3px">you're not alone</strong>Every artist in this room is figuring this out at the same time</div>
+    <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:4px;padding:9px 11px;font-size:17px;color:var(--ink);font-weight:300;line-height:1.5"><strong style="display:block;font-family:var(--hand);font-size:17px;color:var(--rust);margin-bottom:3px">one last thing</strong>A day job and making art aren't opposites. They're a plan.</div>
   </div>
-  <span style="position:absolute;bottom:12px;right:16px;font-family:var(--hand);font-size:14px;color:rgba(255,255,255,0.15)">22 / 22</span>
+  <span style="position:absolute;bottom:12px;right:16px;font-family:var(--hand);font-size:14px;color:rgba(255,255,255,0.15)">22 / 23</span>
+</div>
+
+<!-- ═══ 23 RESOURCES / LINK SLIDE ═══ -->
+<div class="slide" style="background:var(--paper);flex-direction:row" data-notes="Leave this slide up while people pack up. Encourage them to scan the QR code or photograph the short link. The worksheet and pricing tool are in the Google Drive folder — tell them it's free, no sign-in required to view.">
+
+  <!-- LEFT — link formats -->
+  <div style="flex:1;padding:40px 44px;display:flex;flex-direction:column;justify-content:center;border-right:2px dashed var(--border)">
+    <div class="eyebrow" style="margin-bottom:14px">take the tools with you</div>
+    <h2 style="font-family:var(--serif);font-size:26px;color:var(--ink);margin-bottom:24px;font-weight:600">Worksheet + Pricing Tool<br>— free to download</h2>
+
+    <!-- SHORT LINK -->
+    <div style="margin-bottom:16px">
+      <div style="font-family:var(--hand);font-size:15px;color:var(--muted);margin-bottom:4px">short link — easiest to type</div>
+      <div style="background:var(--ink);border-radius:6px;padding:12px 18px;display:inline-block">
+        <span style="font-family:monospace;font-size:22px;color:#FFD080;letter-spacing:0.04em">tinyurl.com/artist-pricing-tool</span>
+      </div>
+      <div style="font-family:var(--hand);font-size:13px;color:var(--muted);margin-top:5px">* create this at tinyurl.com using the full link below</div>
+    </div>
+
+    <!-- FULL LINK -->
+    <div>
+      <div style="font-family:var(--hand);font-size:15px;color:var(--muted);margin-bottom:4px">full Google Drive link</div>
+      <div style="background:var(--paper-dark);border:1.5px solid var(--border);border-radius:6px;padding:10px 14px;word-break:break-all">
+        <span style="font-family:monospace;font-size:13px;color:var(--ink);line-height:1.5">https://drive.google.com/file/d/<strong>17QE0NAExFB62hAsxNeJPNDNzqhbM7ZED</strong>/view?usp=drive_link</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT — QR code -->
+  <div style="width:300px;flex-shrink:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:32px 28px;gap:14px">
+    <div style="font-family:var(--hand);font-size:16px;color:var(--muted);text-align:center">scan to open on your phone</div>
+    <div id="qrcode" style="background:#fff;padding:12px;border-radius:8px;border:2px solid var(--border);display:flex;align-items:center;justify-content:center"></div>
+    <div style="font-family:var(--hand);font-size:14px;color:var(--muted);text-align:center;line-height:1.4">Works with your phone camera.<br>No app needed.</div>
+  </div>
+
+  <span class="snum">23 / 23</span>
 </div>
 
 </div><!-- /deck -->
@@ -834,6 +931,21 @@ body{background:#B8A888;font-family:var(--body);color:var(--ink);display:flex;fl
     if(e.key.toLowerCase()==='s') toggleNotes();
   });
   setTimeout(() => { hint.style.opacity = '0' }, 4000);
+</script>
+
+<!-- QR CODE GENERATION -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  // Generate QR code pointing to the Google Drive link
+  const qrUrl = "https://drive.google.com/file/d/17QE0NAExFB62hAsxNeJPNDNzqhbM7ZED/view?usp=drive_link";
+  new QRCode(document.getElementById("qrcode"), {
+    text: qrUrl,
+    width: 200,
+    height: 200,
+    colorDark: "#1C1A17",
+    colorLight: "#FFFFFF",
+    correctLevel: QRCode.CorrectLevel.H
+  });
 </script>
 </body>
 </html>
