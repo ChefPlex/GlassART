@@ -24,9 +24,9 @@ The studio is [Public Glass](https://www.publicglass.org), 1750 Armstrong Avenue
 
 ## What's In This Repo
 
-### The Business of Being an Artist â€” GAS 2026 Presentation
+### The Business of Being an Artist - GAS 2026 Presentation
 
-**File:** `Business_Of_Being_An_Artist_Presentation.html` Â· `index.html`
+**File:** `Business_Of_Being_An_Artist_Presentation.html` , `index.html`
 
 A full slide presentation built for the Glass Art Society 2026 conference. The subject is the one most glass artists avoid until it becomes a crisis: pricing, income, and the business of sustaining a practice.
 
@@ -101,4 +101,4 @@ GlassART because that's what it is - glass as art, not as product, not as craft 
 ---
 
 *Eric White - Glass Artist, Board President at Public Glass*
-*[artglasssf.com](https://www.artglasssf.com) Â· [publicglass.org](https://www.publicglass.org) Â· San Francisco, CA*
+*[artglasssf.com](https://www.artglasssf.com) , [publicglass.org](https://www.publicglass.org) , San Francisco, CA*
