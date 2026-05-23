@@ -15,7 +15,7 @@ Glassblowing is a team sport that looks like a solo act. The gaffer at the pipe 
 The disciplines I work in:
 
 - **Hot glass / glassblowing** - The furnace work. Gathering, shaping, inflating, finishing. Vases, bowls, paperweights, cocktail glass. The version most people picture when they hear the word.
-- **Flameworking** - Borosilicate work at the torch. More controlled, more intimate, completely different set of instincts.
+- **Flameworking** - Torch work, also called lampworking or torchworking: solid rods or hollow tubes heated in a stationary flame, then shaped, sculpted, or blown with tools, gravity, and breath. Borosilicate lives here, but so does soft glass, bead work, marbles, pendants, small sculpture, and tiny hollow forms. More controlled, more intimate, completely different set of instincts.
 - **Cold work** - Cutting, grinding, polishing. What you do after the heat is done and the piece is out of the kiln, when the piece stops glowing and starts telling you what you actually made.
 
 The studio is [Public Glass](https://www.publicglass.org), 1750 Armstrong Avenue, San Francisco. Nonprofit, open access, Bayview/Hunters Point. If you're in the Bay Area and want to try glassblowing, it is the right place to start.
