@@ -158,3 +158,8 @@ The people I've worked alongside at Public Glass are serious artists. The work d
 Eric White  
 Glass artist, past Board President at Public Glass  
 [artglasssf.com](https://www.artglasssf.com) | [publicglass.org](https://www.publicglass.org) | San Francisco, CA
+
+## License
+
+Copyright (c) 2026 Eric White. Licensed under [CC BY 4.0](LICENSE): use it, adapt it, put it to
+work in your own program. Credit is the only condition.
