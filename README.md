@@ -2,7 +2,7 @@
 
 **Notes, resources, and tools at the intersection of glassblowing and everything else.**
 
-I've been blowing glass for years: one or two nights a week, usually at Public Glass in San Francisco's Bayview neighborhood, where I also served as Board President.
+I've been blowing glass for about twenty years: one or two nights a week, usually at Public Glass in San Francisco's Bayview neighborhood, where I also served as Board President and Executive Director at the same time, because the studio could not afford both.
 
 Glass is not a hobby I picked up to relax.
 
@@ -156,7 +156,7 @@ The people I've worked alongside at Public Glass are serious artists. The work d
 ## Maintainer
 
 Eric White  
-Glass artist, past Board President at Public Glass  
+Glass artist, past Board President and Executive Director at Public Glass  
 [artglasssf.com](https://www.artglasssf.com) | [publicglass.org](https://www.publicglass.org) | San Francisco, CA
 
 ## License
