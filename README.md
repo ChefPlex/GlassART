@@ -86,7 +86,7 @@ A second sheet, **Pricing Calculator**, walks through:
 
 A **Quick Reference** sheet has formulas, real-talk answers to common questions, and the notes artists tend to need right when the spreadsheet starts feeling personal.
 
-## Studio Notes Now Built
+## Studio Notes (Working)
 
 The old "What Is Coming" list is not a list anymore. It is a `docs/` folder, because at some point "coming soon" starts to sound like a kiln that has been beeping for forty minutes while everyone pretends not to hear it.
 
